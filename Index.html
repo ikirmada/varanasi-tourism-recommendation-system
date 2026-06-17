@@ -3,64 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Varanasi Recommendation System</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #f4f7f6;
-            text-align: center;
-            padding: 50px;
-        }
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .filter-container {
-            margin: 20px 0;
-        }
-        .btn {
-            background-color: #e0e0e0;
-            color: #333;
-            border: none;
-            padding: 10px 20px;
-            font-size: 15px;
-            border-radius: 20px;
-            cursor: pointer;
-            margin: 5px;
-            font-weight: 600;
-            transition: all 0.2s;
-        }
-        .btn:hover {
-            background-color: #d0d0d0;
-        }
-        /* Specific styling for the active category buttons */
-        .btn-ghat:hover { background-color: #3498db; color: white; }
-        .btn-food:hover { background-color: #e67e22; color: white; }
-        .btn-temple:hover { background-color: #9b59b6; color: white; }
-        .btn-heritage:hover { background-color: #16a085; color: white; }
-        .btn-all:hover { background-color: #f39c12; color: white; }
-
-        .recommendation-box {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px solid #eee;
-            min-height: 120px;
-        }
-        #place-name {
-            color: #ff6b6b;
-            margin-bottom: 10px;
-        }
-        #place-desc {
-            color: #555;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css">
+<head></head>
 <body>
+
+    <header class="navbar">
+        <div class="logo"></div>BanarasYatra 🌊</div></div>
+    </header>
 
     <div class="card">
         <h1>Explore Varanasi</h1>
@@ -71,7 +20,7 @@
             <button class="btn btn-food" onclick="getRecommendation('food')">🍲 Food</button>
             <button class="btn btn-temple" onclick="getRecommendation('temple')">🛕 Temples</button>
             <button class="btn btn-heritage" onclick="getRecommendation('heritage')">🏛️ Heritage</button>
-            <button class="btn btn-all" onclick="getRecommendation('all')">🌟 Surprise Me!</button>
+            <button class="btn btn-surprise" onclick="surpriseMe()">🎲 Surprise Me</button>
         </div>
         
         <div class="recommendation-box">
